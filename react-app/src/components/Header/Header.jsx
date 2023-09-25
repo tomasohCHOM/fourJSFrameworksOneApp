@@ -9,7 +9,7 @@ export default function Header() {
         <span>About</span>
         <span>Projects</span>
         <span>Contact</span>
-        <button>Dark Mode</button>
+        <button className={styles.button}>Dark Mode</button>
       </div>
     </header>
   );
