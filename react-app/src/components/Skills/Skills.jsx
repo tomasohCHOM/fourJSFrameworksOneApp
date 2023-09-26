@@ -23,32 +23,34 @@ export default function Skills() {
 
   return (
     <section>
-      <h2 className={styles.subtitle}>Skills</h2>
-      <div className={styles.programmingSkillsContainer}>
-        <h3>Programming</h3>
-        {programmingSkills.map((skill, key) => {
-          // console.log(`../../assets/skills/${skill}-icon.png`);
-          return (
-            <img
-              key={key}
-              src={`/assets/skills/${skill}-icon.png`}
-              alt={skill + " icon"}
-            />
-          );
-        })}
+      <h2 className={styles.sectionTitle}>Skills</h2>
+      <div className={styles.skillsContainer}>
+        <h3 className={styles.sectionSubtitle}>Programming</h3>
+        <div>
+          {programmingSkills.map((skill, key) => {
+            return (
+              <img
+                key={key}
+                src={`/assets/skills/${skill}-icon.png`}
+                alt={skill + " icon"}
+              />
+            );
+          })}
+        </div>
       </div>
-      <div className={styles.frameworkSkillsContainer}>
-        <h3>Framework</h3>
-        {frameworkSkills.map((skill, key) => {
-          // console.log(`../../assets/skills/${skill}-icon.png`);
-          return (
-            <img
-              key={key}
-              src={`/assets/skills/${skill}-icon.png`}
-              alt={skill + " icon"}
-            />
-          );
-        })}
+      <div className={styles.skillsContainer}>
+        <h3 className={styles.sectionSubtitle}>Framework</h3>
+        <div>
+          {frameworkSkills.map((skill, key) => {
+            return (
+              <img
+                key={key}
+                src={`/assets/skills/${skill}-icon.png`}
+                alt={skill + " icon"}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
   );

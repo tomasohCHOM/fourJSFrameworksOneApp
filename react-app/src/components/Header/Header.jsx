@@ -10,7 +10,7 @@ export default function Header() {
         <span>Skills</span>
         <span>Projects</span>
         <span>Contact</span>
-        <button className={styles.button}>Dark Mode</button>
+        {/* <button className={styles.button}>Dark Mode</button> */}
       </div>
     </header>
   );

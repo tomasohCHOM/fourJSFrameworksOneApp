@@ -1,16 +1,29 @@
-.subtitle {
-  font-size: 2rem;
+.sectionTitle {
+  font-size: 2.25rem;
 }
 
-.programmingSkillsContainer,
-.frameworkSkillsContainer {
+.sectionSubtitle {
+  font-size: 1.75rem;
+}
+
+.skillsContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  row-gap: 2rem;
 }
 
-.programmingSkillsContainer > img,
-.frameworkSkillsContainer > img {
+.skillsContainer > div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.skillsContainer > div > img {
+  cursor: pointer;
   width: 5rem;
+}
+
+@keyframes expand {
 }
