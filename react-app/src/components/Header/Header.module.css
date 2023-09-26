@@ -20,7 +20,7 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-contrast);
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
   border: 2px solid rgb(207, 207, 207);
