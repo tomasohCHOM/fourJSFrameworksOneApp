@@ -24,10 +24,14 @@ export default function Skills() {
     <section>
       <h2>Skills</h2>
       <div>
-        {programmingSkills.map((skill) => {
-          console.log(skill);
+        {programmingSkills.map((skill, key) => {
+          console.log(`../../assets/skills/${skill}-icon.png`);
           return (
-            <img src={`assets/skills/${skill}.png`} alt={skill + " icon"} />
+            <img
+              key={key}
+              src={`../../assets/skills/${skill}-icon.png`}
+              alt={skill + " icon"}
+            />
           );
         })}
       </div>

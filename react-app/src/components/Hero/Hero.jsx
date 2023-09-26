@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import headshot from "../../../../assets/website/photo.jpg";
+import headshot from "../../assets/website/photo.jpg";
 
 export default function Hero() {
   return (
