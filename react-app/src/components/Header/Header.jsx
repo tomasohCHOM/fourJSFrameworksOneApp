@@ -7,6 +7,7 @@ export default function Header() {
       <div className={styles.container.left}>Tomas Oh</div>
       <div className={styles.right}>
         <span>About</span>
+        <span>Skills</span>
         <span>Projects</span>
         <span>Contact</span>
         <button className={styles.button}>Dark Mode</button>

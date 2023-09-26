@@ -1,7 +1,9 @@
 .container {
+  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 1rem;
   font-size: 1.25rem;
   border-bottom: 1px solid rgb(207, 207, 207);
