@@ -6,23 +6,30 @@
   font-size: 1.75rem;
 }
 
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
 .skillsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 .skillsContainer > div {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
 }
 
 .skillsContainer > div > img {
   cursor: pointer;
   width: 5rem;
+  aspect-ratio: 1;
 }
 
 @keyframes expand {
