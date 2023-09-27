@@ -7,6 +7,7 @@
 
   --color-primary: #ffffff;
   --color-contrast: #2e2e2e;
+  --color-blue: #0854b1;
 
   background-color: var(--color-primary);
   color: var(--color-contrast);
@@ -30,7 +31,20 @@ main {
   padding-inline: 5rem;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
 }
