@@ -4,10 +4,32 @@ import Project from "../Project/Project";
 
 const projectsList = [
   {
-    projectName: "Clubannounce",
-    projectImageSource: "/assets/projects/clubannounce.png",
-    projectTechStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
-    projectDescription: "A nice little project",
+    name: "Clubannounce",
+    githubLink: "https://github.com/acmcsufoss/clubannounce",
+    imageSource: "/assets/projects/clubannounce.png",
+    techStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
+    description: "A nice little project",
+  },
+  {
+    name: "Devdle",
+    githubLink: "https://github.com/acmcsufoss/clubannounce",
+    imageSource: "/assets/projects/devdle.png",
+    techStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
+    description: "A nice little project",
+  },
+  {
+    name: "MatriXpert",
+    githubLink: "https://github.com/acmcsufoss/clubannounce",
+    imageSource: "/assets/projects/matrixpert.png",
+    techStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
+    description: "A nice little project",
+  },
+  {
+    name: "CanvasFindPeople",
+    githubLink: "https://github.com/acmcsufoss/clubannounce",
+    imageSource: "/assets/projects/canvas-find-people.png",
+    techStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
+    description: "A nice little project",
   },
 ];
 
@@ -19,10 +41,11 @@ export default function ProjectsList() {
         {projectsList.map((project, key) => (
           <Project
             key={key}
-            projectName={project.projectName}
-            imageSource={project.projectImageSource}
-            projectTechStack={project.projectTechStack}
-            projectDescription={project.projectDescription}
+            projectName={project.name}
+            imageSource={project.imageSource}
+            projectTechStack={project.techStack}
+            projectDescription={project.description}
+            githubLink={project.githubLink}
           />
         ))}
       </div>

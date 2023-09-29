@@ -1,0 +1,14 @@
+.projectContainer {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid black;
+  width: auto;
+}
+
+.image {
+  width: 30rem;
+}

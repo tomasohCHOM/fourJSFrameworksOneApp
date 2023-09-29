@@ -4,7 +4,7 @@ import Badge from "../components/Badge";
 
 export default function Project(props) {
   return (
-    <div>
+    <div className={styles.projectContainer}>
       <h3>{props.projectName}</h3>
       <img
         className={styles.image}
@@ -17,6 +17,9 @@ export default function Project(props) {
         ))}
       </div>
       <p>{props.projectDescription}</p>
+      <div className={styles.links}>
+        <a href={props.githubLink}>Github Repo</a>
+      </div>
     </div>
   );
 }
