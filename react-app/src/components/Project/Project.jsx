@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Project.module.css";
-import Badge from "../components/Badge";
+import Badge from "../Badge/Badge";
 
 export default function Project(props) {
   return (

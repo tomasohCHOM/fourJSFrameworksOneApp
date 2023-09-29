@@ -12,3 +12,8 @@
 .image {
   width: 30rem;
 }
+
+.techStackContainer {
+  display: flex;
+  gap: 0.5rem;
+}
