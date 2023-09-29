@@ -22,7 +22,10 @@
 
 .skillsContainer > div {
   display: flex;
+  row-gap: 1rem;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   column-gap: 1.5rem;
 }
 
