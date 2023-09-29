@@ -3,3 +3,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
+
+.sectionTitle {
+  font-size: 2.25rem;
+}
+
+@media only screen and (max-width: 60rem) {
+  .projectsListContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -37,3 +37,12 @@
 
 @keyframes expand {
 }
+
+@media only screen and (max-width: 40rem) {
+  .skillsContainer > div {
+    column-gap: 1rem;
+  }
+  .skillsContainer > div > img {
+    width: 3rem;
+  }
+}

@@ -19,3 +19,14 @@
   width: 20rem;
   height: auto;
 }
+
+@media only screen and (max-width: 40rem) {
+  .hero {
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+  }
+
+  .right > img {
+    width: 15rem;
+  }
+}
