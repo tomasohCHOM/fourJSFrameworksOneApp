@@ -8,6 +8,11 @@
   --color-primary: #ffffff;
   --color-contrast: #2e2e2e;
   --color-blue: #0854b1;
+  --box-shadow: 0 3px 12px rgba(16, 19, 21, 0.1);
+
+  --font-size-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
+  --font-size-600: clamp();
+  --font-size-400: clamp();
 
   background-color: var(--color-primary);
   color: var(--color-contrast);
@@ -38,13 +43,20 @@ h3 {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: var(--font-size-xl);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: calc(0.5rem + 1.5vw);
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-weight: 400;
+  font-size: calc(1rem + 1vw);
+}
+
+@media only screen and (max-width: 40rem) {
+  main {
+    padding-inline: 2rem;
+  }
 }
