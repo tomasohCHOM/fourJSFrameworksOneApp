@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Project.module.css";
+import Badge from "../components/Badge";
 
 export default function Project(props) {
   return (
@@ -11,9 +12,9 @@ export default function Project(props) {
         alt={"Image for Project " + props.projectName}
       />
       <div className={styles.techStackContainer}>
-        {props.projectTechStack.map((technology) => {
-          return <Badge text={technology} />;
-        })}
+        {props.projectTechStack.map((technology, key) => (
+          <Badge key={key} text={technology} />
+        ))}
       </div>
       <p>{props.projectDescription}</p>
     </div>
