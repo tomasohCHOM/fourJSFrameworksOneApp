@@ -8,28 +8,32 @@ const projectsList = [
     githubLink: "https://github.com/acmcsufoss/clubannounce",
     imageSource: "/assets/projects/clubannounce.png",
     techStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
-    description: "A nice little project",
+    description:
+      "A Web page aimed to speed the process of creating new announcements and events within ACM, the largest Computer Science club at Cal State Fullerton.",
   },
   {
     name: "Devdle",
     githubLink: "https://github.com/tomasohCHOM/Devdle",
     imageSource: "/assets/projects/devdle.png",
     techStack: ["SvelteKit", "TypeScript", "Sass", "Supabase", "OAuth"],
-    description: "A nice little project",
+    description:
+      "A Wordle clone based on Computer Science/Web Development concepts. Its goal is to entertain and educate users who want to get into the Software Engineering field.",
   },
   {
     name: "MatriXpert",
     githubLink: "https://github.com/tomasohCHOM/MatriXpert",
     imageSource: "/assets/projects/matrixpert.png",
     techStack: ["React", "React Router", "Sass", "Katex", "Vitest"],
-    description: "A nice little project",
+    description:
+      "A Matrix calculator website that supports operations such as Matrix multiplication, transpose, determinant, and REF/RREF.",
   },
   {
     name: "CanvasFindPeople",
     githubLink: "https://github.com/tomasohCHOM/CanvasFindPeople",
     imageSource: "/assets/projects/canvas-find-people.png",
-    techStack: ["Python", "SQLite", "Discord API", "Canvas API"],
-    description: "A nice little project",
+    techStack: ["Python", "SQLite", "Discord Bot", "Canvas API"],
+    description:
+      "A Discord bot made in Python that makes use of the Canvas API to search for users in Canvas courses.",
   },
 ];
 
