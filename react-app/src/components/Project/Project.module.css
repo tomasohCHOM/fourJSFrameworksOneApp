@@ -10,12 +10,18 @@
   width: auto;
 }
 
+.projectContainer > p {
+  text-align: center;
+  width: 80%;
+}
+
 .image {
-  width: 20rem;
+  width: 80%;
   height: auto;
 }
 
 .techStackContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
