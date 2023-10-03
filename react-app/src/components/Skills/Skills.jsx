@@ -39,7 +39,7 @@ export default function Skills() {
         </div>
       </div>
       <div className={styles.skillsContainer}>
-        <h3 className={styles.sectionSubtitle}>Framework</h3>
+        <h3 className={styles.sectionSubtitle}>Frameworks</h3>
         <div>
           {frameworkSkills.map((skill, key) => {
             return (

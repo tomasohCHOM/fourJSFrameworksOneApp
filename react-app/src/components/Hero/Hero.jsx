@@ -8,7 +8,7 @@ export default function Hero() {
       <div className={styles.left}>
         <h3>Hello! I'm</h3>
         <h1>Tomas Oh</h1>
-        <h2>
+        <h2 className={styles.subtitle}>
           Full-Stack Software Engineer and Computer Science Student at
           California State University, Fullerton
         </h2>
