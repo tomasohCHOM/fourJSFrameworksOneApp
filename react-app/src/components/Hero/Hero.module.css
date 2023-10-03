@@ -8,6 +8,10 @@
   margin-block-end: 0.5rem;
 }
 
+.blue {
+  color: var(--color-blue);
+}
+
 .left,
 .right {
   flex: 1;

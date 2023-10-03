@@ -7,8 +7,10 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.left}>
         <h3>Hello! I'm</h3>
-        <h1>Tomas Oh</h1>
-        <h2 className={styles.subtitle}>
+        <h1>
+          <span className={styles.blue}>Tomas Oh</span>
+        </h1>
+        <h2>
           Full-Stack Software Engineer and Computer Science Student at
           California State University, Fullerton
         </h2>
