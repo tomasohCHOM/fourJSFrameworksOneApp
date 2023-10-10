@@ -15,6 +15,13 @@
   width: 80%;
 }
 
+.link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .image {
   width: 80%;
   height: auto;

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Project.module.css";
 import Badge from "../Badge/Badge";
+import Button from "../Button/Button";
 
 export default function Project(props) {
   return (
@@ -17,9 +18,19 @@ export default function Project(props) {
         ))}
       </div>
       <p>{props.projectDescription}</p>
-      <div className={styles.links}>
-        <a href={props.githubLink}>Github Repo</a>
+      <div>
+        <Button>
+          <a className={styles.link} href={props.demoLink}>
+            Demo
+          </a>
+        </Button>
+        <Button>
+          <a className={styles.link} href={props.githubLink}>
+            Github Repo
+          </a>
+        </Button>
       </div>
+      <div className={styles.links}></div>
     </div>
   );
 }
