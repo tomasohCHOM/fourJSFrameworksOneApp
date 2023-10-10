@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
-        <h3>Hello! I'm</h3>
+        <h3 id="about">Hello! I'm</h3>
         <h1>
           <span className={styles.blue}>Tomas Oh</span>
         </h1>

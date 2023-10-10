@@ -23,7 +23,9 @@ export default function Skills() {
 
   return (
     <section className={styles.skillsSection}>
-      <h2 className={styles.sectionTitle}>Skills</h2>
+      <h2 id="skills" className={styles.sectionTitle}>
+        Skills
+      </h2>
       <div className={styles.skillsContainer}>
         <h3 className={styles.sectionSubtitle}>Programming</h3>
         <div>
