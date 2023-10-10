@@ -16,6 +16,12 @@
   --font-size-600: clamp(1.5rem, 2vw + 0.5rem, 2rem);
   --font-size-400: clamp(1.25rem, 1vw + 0.25rem, 1.5rem);
 
+  --size-xl: clamp(2rem, 1.7545rem + 1.0909vw, 3.5rem);
+  --size-lg: clamp(1.5rem, 1.3773rem + 0.5455vw, 2.25rem);
+  --size-md: clamp(1.125rem, 1.0636rem + 0.2727vw, 1.5rem);
+  --size-sm: clamp(1rem, 0.9795rem + 0.0909vw, 1.125rem);
+  --size-xs: clamp(0.75rem, 0.7295rem + 0.0909vw, 0.875rem);
+
   background-color: var(--color-primary);
   color: var(--color-contrast);
 
@@ -45,16 +51,16 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--size-xl);
 }
 
 h2 {
-  font-size: var(--font-size-600);
+  font-size: var(--size-lg);
 }
 
 h3 {
   font-weight: 500;
-  font-size: var(--font-size-400);
+  font-size: var(--size-md);
 }
 
 @media only screen and (max-width: 40rem) {
