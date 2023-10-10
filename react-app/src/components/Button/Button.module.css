@@ -1,0 +1,5 @@
+.button {
+  padding: 0.5rem;
+  background-color: var(--color-blue);
+  color: rgb(255, 255, 255);
+}
