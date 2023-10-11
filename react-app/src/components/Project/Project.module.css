@@ -28,11 +28,22 @@
 
 .image {
   width: 80%;
-  height: auto;
+  /* height: 15rem; */
 }
 
 .techStackContainer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+@media only screen and (max-width: 40rem) {
+  .projectContainer {
+    padding: 1.5rem 2rem;
+  }
+
+  .image {
+    height: auto;
+  }
 }
