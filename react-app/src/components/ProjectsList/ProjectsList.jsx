@@ -5,6 +5,7 @@ import Project from "../Project/Project";
 const projectsList = [
   {
     name: "Clubannounce",
+    demoLink: "",
     githubLink: "https://github.com/acmcsufoss/clubannounce",
     imageSource: "/assets/projects/clubannounce.png",
     techStack: ["SvelteKit", "TypeScript", "Sass", "Figma", "API"],
@@ -13,6 +14,7 @@ const projectsList = [
   },
   {
     name: "Devdle",
+    demoLink: "https://devdlegame.vercel.app",
     githubLink: "https://github.com/tomasohCHOM/Devdle",
     imageSource: "/assets/projects/devdle.png",
     techStack: ["SvelteKit", "TypeScript", "Sass", "Supabase", "OAuth"],
@@ -21,6 +23,7 @@ const projectsList = [
   },
   {
     name: "MatriXpert",
+    demoLink: "https://matrixpert.netlify.app",
     githubLink: "https://github.com/tomasohCHOM/MatriXpert",
     imageSource: "/assets/projects/matrixpert.png",
     techStack: ["React", "React Router", "Sass", "Katex", "Vitest"],
@@ -29,6 +32,7 @@ const projectsList = [
   },
   {
     name: "CanvasFindPeople",
+    demoLink: "",
     githubLink: "https://github.com/tomasohCHOM/CanvasFindPeople",
     imageSource: "/assets/projects/canvas-find-people.png",
     techStack: ["Python", "SQLite", "Discord Bot", "Canvas API"],
@@ -51,6 +55,7 @@ export default function ProjectsList() {
             imageSource={project.imageSource}
             projectTechStack={project.techStack}
             projectDescription={project.description}
+            demoLink={project.demoLink}
             githubLink={project.githubLink}
           />
         ))}

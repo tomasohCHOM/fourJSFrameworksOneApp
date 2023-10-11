@@ -18,19 +18,20 @@ export default function Project(props) {
         ))}
       </div>
       <p>{props.projectDescription}</p>
-      <div>
-        <Button>
-          <a className={styles.link} href={props.demoLink}>
-            Demo
-          </a>
-        </Button>
+      <div className={styles.links}>
+        {props.demoLink !== "" && (
+          <Button>
+            <a className={styles.link} href={props.demoLink}>
+              Demo
+            </a>
+          </Button>
+        )}
         <Button>
           <a className={styles.link} href={props.githubLink}>
             Github Repo
           </a>
         </Button>
       </div>
-      <div className={styles.links}></div>
     </div>
   );
 }

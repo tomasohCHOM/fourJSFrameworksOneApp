@@ -4,10 +4,14 @@
   /* justify-content: center; */
   flex-direction: column;
   row-gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   box-shadow: var(--box-shadow);
   border-radius: 1.5rem;
   width: auto;
+}
+
+.projectContainer > h3 {
+  font-weight: 600;
 }
 
 .projectContainer > p {
