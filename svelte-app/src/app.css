@@ -1,11 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-primary: #ffffff;
+  --color-contrast: #2e2e2e;
+  --color-blue: #0854b1;
+  --color-green: #21a776;
+  --color-gradient: linear-gradient(45%, var(--color-blue), var(--color-green));
+  --box-shadow: 0 3px 12px rgba(16, 19, 21, 0.1);
+
+  --font-size-xl: clamp(2rem, 4vw + 1rem, 4rem);
+  --font-size-600: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  --font-size-400: clamp(1.25rem, 1vw + 0.25rem, 1.5rem);
+
+  --size-xl: clamp(2rem, 1.7545rem + 1.0909vw, 3.5rem);
+  --size-lg: clamp(1.5rem, 1.3773rem + 0.5455vw, 2.25rem);
+  --size-md: clamp(1.125rem, 1.0636rem + 0.2727vw, 1.5rem);
+  --size-sm: clamp(1rem, 0.9795rem + 0.0909vw, 1.125rem);
+  --size-xs: clamp(0.75rem, 0.7295rem + 0.0909vw, 0.875rem);
+
+  background-color: var(--color-primary);
+  color: var(--color-contrast);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,67 +32,47 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
+main {
+  /* padding-block-start: 6rem; */
+  margin-block-start: 6rem;
+  padding-inline: 5rem;
+}
+
+h1,
+h2,
+h3 {
   line-height: 1.1;
 }
 
-.card {
-  padding: 2em;
+h1 {
+  font-size: var(--size-xl);
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h2 {
+  font-size: var(--size-lg);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+h3 {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: var(--size-md);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media only screen and (max-width: 60rem) {
+  main {
+    padding-inline: 2.5rem;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 40rem) {
+  main {
+    padding-inline: 2rem;
   }
 }
