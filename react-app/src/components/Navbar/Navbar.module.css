@@ -32,3 +32,9 @@
   border: 2px solid rgb(207, 207, 207);
   border-radius: 1rem;
 }
+
+@media only screen and (max-width: 40rem) {
+  .container {
+    position: fixed;
+  }
+}

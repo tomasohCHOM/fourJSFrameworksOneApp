@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.module.css";
+import styles from "./Navbar.module.css";
 
 const headerItems = [
   { title: "About", path: "#about" },
@@ -13,9 +13,9 @@ const goTo = (event, path) => {
   window.location.replace(path);
 };
 
-export default function Header() {
+export default function NavBar() {
   return (
-    <header className={styles.container}>
+    <nav className={styles.container}>
       <div className={styles.container.left}>Tomas Oh</div>
       <div className={styles.right}>
         {headerItems.map((item, index) => (
@@ -25,6 +25,6 @@ export default function Header() {
         ))}
         {/* <button className={styles.button}>Dark Mode</button> */}
       </div>
-    </header>
+    </nav>
   );
 }
