@@ -17,11 +17,17 @@
   cursor: pointer;
 }
 
-.right > * {
+.right > .sections > * {
   margin-inline: 0.5rem;
+  transition: all 0.2s;
 }
 
-.button {
+.right > .sections > span:hover {
+  color: var(--color-blue);
+}
+
+.openNavbarBtn {
+  display: none;
   outline: none;
   border: none;
   cursor: pointer;
@@ -30,11 +36,32 @@
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
   border: 2px solid rgb(207, 207, 207);
-  border-radius: 1rem;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 40rem) {
-  .container {
+  .sections {
     position: fixed;
+    top: 0;
+    right: -15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: min(13rem, 60vw);
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--color-primary);
+    box-shadow: var(--box-shadow);
+  }
+
+  .sections > span {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .right > .openNavbarBtn {
+    display: block;
   }
 }

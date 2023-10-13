@@ -14,6 +14,7 @@ function App() {
         {/* Displays my programming/framework skills */}
         <Skills />
 
+        {/* Displays my CS Projects through their own Project component */}
         <ProjectsList />
       </main>
     </>
