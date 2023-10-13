@@ -41,8 +41,8 @@
 }
 
 main {
-  /* padding-block-start: 6rem; */
-  margin-block-start: 6rem;
+  padding-block-start: 4rem;
+  /* margin-block-start: 6rem; */
   padding-inline: 5rem;
 }
 

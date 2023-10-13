@@ -1,5 +1,5 @@
 .container {
-  z-index: 10;
+  z-index: 5;
   position: fixed;
   top: 0;
   display: flex;
@@ -26,21 +26,41 @@
   color: var(--color-blue);
 }
 
-.openNavbarBtn {
+.openNavbarBtn,
+.closeNavbarBtn {
   display: none;
   outline: none;
   border: none;
   cursor: pointer;
   background-color: transparent;
   color: var(--color-contrast);
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
-  border: 2px solid rgb(207, 207, 207);
+  text-align: center;
+  font-size: 1.5rem;
   border-radius: 50%;
 }
 
+.closeNavbarBtn {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+
 @media only screen and (max-width: 40rem) {
+  .darkCover {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .darkCover.activeCover {
+    display: block;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
   .sections {
+    z-index: 10;
     position: fixed;
     top: 0;
     right: -15rem;
@@ -54,6 +74,11 @@
     padding: 2rem;
     background-color: var(--color-primary);
     box-shadow: var(--box-shadow);
+    transition: all 0.2s;
+  }
+
+  .sections.active {
+    right: 0;
   }
 
   .sections > span {
@@ -62,6 +87,11 @@
   }
 
   .right > .openNavbarBtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .closeNavbarBtn {
     display: block;
   }
 }
