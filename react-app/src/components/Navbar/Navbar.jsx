@@ -10,16 +10,22 @@ const navbarItems = [
   { title: "Contact", path: "#contact" },
 ];
 
-const scrollToLocation = (event, path) => {
-  event.preventDefault();
-  const element = document.querySelector(path);
-  const yOffset = -10;
-  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
-};
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToLocation = (event, path) => {
+    event.preventDefault();
+    const element = document.querySelector(path);
+    if (element) {
+      const yOffset = 100;
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
