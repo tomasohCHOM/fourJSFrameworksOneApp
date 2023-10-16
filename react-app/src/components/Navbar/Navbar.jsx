@@ -10,9 +10,12 @@ const navbarItems = [
   { title: "Contact", path: "#contact" },
 ];
 
-const goTo = (event, path) => {
+const scrollToLocation = (event, path) => {
   event.preventDefault();
-  window.location.replace(path);
+  const element = document.querySelector(path);
+  const yOffset = -10;
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 export default function Navbar() {
@@ -33,7 +36,7 @@ export default function Navbar() {
               <RxCross2 />
             </button>
             {navbarItems.map((item, index) => (
-              <span key={index} onClick={(e) => goTo(e, item.path)}>
+              <span key={index} onClick={(e) => scrollToLocation(e, item.path)}>
                 {item.title}
               </span>
             ))}
