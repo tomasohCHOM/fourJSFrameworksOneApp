@@ -17,7 +17,6 @@ export default function Navbar() {
     event.preventDefault();
     const element = document.querySelector(path);
     if (element) {
-      const yOffset = 100;
       element.scrollIntoView({
         behavior: "smooth",
         block: "center",
