@@ -1,8 +1,10 @@
 <script>
-  import svelteLogo from "./assets/svelte.svg";
   import Navbar from "./lib/components/Navbar.svelte";
-  import viteLogo from "/vite.svg";
+  import Skills from "./lib/components/Skills.svelte";
 </script>
 
 <Navbar />
-<h1>Hello World</h1>
+
+<main>
+  <Skills />
+</main>
