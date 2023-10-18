@@ -1,7 +1,3 @@
-<script>
-  export let props;
-</script>
-
 <button class="button"><slot /></button>
 
 <style>
