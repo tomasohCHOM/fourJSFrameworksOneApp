@@ -6,7 +6,7 @@
 </script>
 
 <div class="projectContainer">
-  <h3>{project.projectName}</h3>
+  <h3>{project.name}</h3>
   <img
     class="image"
     src={project.imageSource}
@@ -21,7 +21,7 @@
   <div class="links">
     {#if project.demoLink !== ""}
       <Button>
-        <a class="link" href={project.demoLink}> Demo </a>
+        <a class="link" href={project.demoLink}>Demo</a>
       </Button>
     {/if}
     <Button>
