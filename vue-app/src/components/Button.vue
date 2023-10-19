@@ -1,0 +1,22 @@
+<template>
+  <button class="button"><slot /></button>
+</template>
+
+<style scoped>
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-inline: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-blue);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.75;
+}
+</style>
