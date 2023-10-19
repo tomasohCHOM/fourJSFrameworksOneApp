@@ -1,14 +1,14 @@
-<script setup>
-import { IoCloseOutline } from "oh-vue-icons/icons";
-import { FaBars } from "oh-vue-icons/icons";
-import { ref } from "vue";
+<script>
+// import { IoCloseOutline } from "oh-vue-icons/icons";
+// import { FaBars } from "oh-vue-icons/icons";
+import OhVueIcons from "oh-vue-icons";
 
-const navbarItems = ref([
+const navbarItems = [
   { title: "About", path: "#about" },
   { title: "Skills", path: "#skills" },
   { title: "Projects", path: "#projects" },
   { title: "Contact", path: "#contact" },
-]);
+];
 
 let isOpen = false;
 
@@ -23,6 +23,22 @@ const scrollToLocation = (event, path) => {
     });
   }
   isOpen = !isOpen;
+};
+
+export default {
+  name: "Navbar",
+  data: () => {
+    return {
+      isOpen: false,
+      navbarItems,
+    };
+  },
+  methods: {
+    scrollToLocation: scrollToLocation,
+  },
+  components: {
+    "v-icons": OhVueIcons,
+  },
 };
 </script>
 
@@ -44,7 +60,7 @@ const scrollToLocation = (event, path) => {
         </span>
       </div>
       <button @click="() => (isOpen = !isOpen)" class="openNavbarBtn">
-        <FaBars />
+        <v-icons name="fa-bars" />
       </button>
     </div>
   </nav>
