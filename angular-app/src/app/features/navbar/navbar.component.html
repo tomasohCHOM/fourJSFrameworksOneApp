@@ -5,7 +5,7 @@
   <div class="right">
     <div class="sections">
       <button class="closeNavbarBtn">Yo</button>
-      <span role="button" tabindex="0"> item.title </span>
+      <span *ngFor="let item of navbarItems"> {{ item.title }} </span>
     </div>
     <button class="openNavbarBtn"></button>
   </div>

@@ -1,8 +1,24 @@
+import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 
 @Component({
+  imports: [CommonModule],
   selector: "app-navbar",
+  standalone: true,
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.css"],
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  isOpen: boolean = false;
+  navbarItems: NavbarItem[] = [
+    { title: "About", path: "#about" },
+    { title: "Skills", path: "#skills" },
+    { title: "Projects", path: "#projects" },
+    { title: "Contact", path: "#contact" },
+  ];
+}
+
+export interface NavbarItem {
+  title: string;
+  path: string;
+}
