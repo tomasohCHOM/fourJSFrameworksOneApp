@@ -4,19 +4,24 @@
       <span>Tomas Oh</span>
     </div>
     <div class="right">
-      <div class="sections" class:active="{isOpen}">
-        <button @click="isOpen = !isOpen" class="closeNavbarBtn">
-          <v-icon name="io-close-outline" />
+      <div class="sections" :class="{ active: isOpen }">
+        <button @click="() => (isOpen = !isOpen)" class="closeNavbarBtn">
+          <v-icon name="io-close-outline" scale="1.5" />
         </button>
         <span
           v-for="item in navbarItems"
-          @click="(e) => scrollToLocation(e, item.path)"
+          @click="
+            (e) => {
+              scrollToLocation(e, item.path);
+              isOpen = !isOpen;
+            }
+          "
         >
           {{ item.title }}
         </span>
       </div>
       <button @click="() => (isOpen = !isOpen)" class="openNavbarBtn">
-        <v-icon name="fa-bars" />
+        <v-icon name="fa-bars" scale="1.5" />
       </button>
     </div>
   </nav>
@@ -24,15 +29,11 @@
   <div
     @click="() => (isOpen = !isOpen)"
     class="darkCover"
-    :class="{ isOpen }"
+    :class="{ activeCover: isOpen }"
   ></div>
 </template>
 
 <script>
-// import { IoCloseOutline } from "oh-vue-icons/icons";
-// import { FaBars } from "oh-vue-icons/icons";
-import { OhVueIcon } from "oh-vue-icons";
-
 const navbarItems = [
   { title: "About", path: "#about" },
   { title: "Skills", path: "#skills" },
@@ -52,7 +53,6 @@ const scrollToLocation = (event, path) => {
       inline: "nearest",
     });
   }
-  isOpen = !isOpen;
 };
 
 export default {
@@ -65,9 +65,6 @@ export default {
   },
   methods: {
     scrollToLocation: scrollToLocation,
-  },
-  components: {
-    "v-icon": OhVueIcon,
   },
 };
 </script>
