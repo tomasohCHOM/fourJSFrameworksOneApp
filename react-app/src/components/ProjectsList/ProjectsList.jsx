@@ -44,7 +44,7 @@ const projectsList = [
 export default function ProjectsList() {
   return (
     <section>
-      <h2 id="projects" className={styles.sectionTitle}>
+      <h2 id="projects" className="sectionTitle m-end">
         Projects
       </h2>
       <div className={styles.projectsListContainer}>

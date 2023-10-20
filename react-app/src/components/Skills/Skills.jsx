@@ -23,7 +23,7 @@ export default function Skills() {
 
   return (
     <section className={styles.skillsSection}>
-      <h2 id="skills" className={styles.sectionTitle}>
+      <h2 id="skills" className="sectionTitle">
         Skills
       </h2>
       <div className={styles.skillsContainer}>
