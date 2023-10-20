@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+// import photo from "../../../assets/website/photo.jpg";
 
 @Component({
   selector: "app-hero",
@@ -8,4 +9,6 @@ import { CommonModule } from "@angular/common";
   templateUrl: "./hero.component.html",
   styleUrls: ["./hero.component.css"],
 })
-export class HeroComponent {}
+export class HeroComponent {
+  // headshot = photo;
+}
