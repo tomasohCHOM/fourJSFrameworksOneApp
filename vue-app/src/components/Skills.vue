@@ -49,10 +49,6 @@ export default {
 </script>
 
 <style scoped>
-.sectionTitle {
-  font-size: 2.25rem;
-}
-
 .sectionSubtitle {
   font-size: 1.75rem;
 }

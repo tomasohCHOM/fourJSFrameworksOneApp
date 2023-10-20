@@ -4,7 +4,7 @@
     <img
       class="image"
       :src="project.imageSource"
-      :alt="'Image for Project ' + project.projectName"
+      :alt="'Image for Project ' + project.name"
     />
     <div class="techStackContainer">
       <Badge v-for="technology in project.techStack" :text="technology" />
@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import Badge from "./Badge.svelte";
-import Button from "./Button.svelte";
+import Badge from "./Badge.vue";
+import Button from "./Button.vue";
 
 export default {
   name: "Project",

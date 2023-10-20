@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 id="projects" class="styles">Projects</h2>
+    <h2 id="projects" class="sectionTitle m-end">Projects</h2>
     <div class="projectsListContainer">
       <Project v-for="project in projectsList" :project="project" />
     </div>
