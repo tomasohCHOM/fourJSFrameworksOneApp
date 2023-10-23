@@ -1,17 +1,18 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-// import {faCoffee} from "@fortawesome/fontawesome-svg-core";
+import { NgIconComponent, provideIcons } from "@ng-icons/core";
+import { ionClose } from "@ng-icons/ionicons"
+import { heroBars3 } from "@ng-icons/heroicons/outline"
 
 @Component({
   selector: "app-navbar",
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [CommonModule, NgIconComponent],
+  providers: [provideIcons({ ionClose, heroBars3 })],
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.css"],
 })
 export class NavbarComponent {
-  // faCoffee = faCoffee;
   isOpen: boolean = false;
   navbarItems: NavbarItem[] = [
     { title: "About", path: "#about" },

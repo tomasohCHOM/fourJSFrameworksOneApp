@@ -4,7 +4,9 @@
   </div>
   <div class="right">
     <div [ngClass]="{ sections: true, active: isOpen }">
-      <button class="closeNavbarBtn" (click)="isOpen = !isOpen">X</button>
+      <button class="closeNavbarBtn" (click)="isOpen = !isOpen">
+        <ng-icon name="ionClose"></ng-icon>
+      </button>
       <span
         *ngFor="let item of navbarItems"
         (click)="scrollToLocation($event, item.path)"
@@ -12,7 +14,9 @@
         {{ item.title }}
       </span>
     </div>
-    <button (click)="isOpen = !isOpen" class="openNavbarBtn">O</button>
+    <button (click)="isOpen = !isOpen" class="openNavbarBtn">
+      <ng-icon name="heroBars3"></ng-icon>
+    </button>
   </div>
 </nav>
 
