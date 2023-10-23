@@ -1,14 +1,17 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+// import {faCoffee} from "@fortawesome/fontawesome-svg-core";
 
 @Component({
   selector: "app-navbar",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FontAwesomeModule],
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.css"],
 })
 export class NavbarComponent {
+  // faCoffee = faCoffee;
   isOpen: boolean = false;
   navbarItems: NavbarItem[] = [
     { title: "About", path: "#about" },
