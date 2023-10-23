@@ -1,0 +1,23 @@
+<section class="skillsSection">
+  <h2 id="skills" class="sectionTitle">Skills</h2>
+  <div class="skillsContainer">
+    <h3 class="sectionSubtitle">Programming</h3>
+    <div>
+      <img
+        *ngFor="let skill of programmingSkills"
+        [src]="'/assets/skills/' + skill + '-icon.png'"
+        [alt]="skill + 'icon'"
+      />
+    </div>
+  </div>
+  <div class="skillsContainer">
+    <h3 class="sectionSubtitle">Frameworks</h3>
+    <div>
+      <img
+        *ngFor="let skill of frameworkSkills"
+        [src]="'/assets/skills/' + skill + '-icon.png'"
+        [alt]="skill + 'icon'"
+      />
+    </div>
+  </div>
+</section>
