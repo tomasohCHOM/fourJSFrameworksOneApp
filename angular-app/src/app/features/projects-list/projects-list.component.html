@@ -1,1 +1,6 @@
-<p>projects-list works!</p>
+<section>
+  <h2 id="projects" class="sectionTitle m-end">Projects</h2>
+  <div class="projectsListContainer">
+    <app-project *ngFor="let project of projectsList" [project]="project" />
+  </div>
+</section>

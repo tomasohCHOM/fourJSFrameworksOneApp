@@ -1,13 +1,13 @@
 .projectContainer {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
   row-gap: 0.5rem;
   padding: 2rem;
   box-shadow: var(--box-shadow);
   border-radius: 1.5rem;
   width: auto;
+  height: 100%;
 }
 
 .projectContainer > h3 {

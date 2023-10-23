@@ -2,7 +2,7 @@
   <h3>{{ project.name }}</h3>
   <img
     class="image"
-    src="{project.imageSource}"
+    [src]="project.imageSource"
     [alt]="'Image for Project ' + project.name"
   />
   <div class="techStackContainer">

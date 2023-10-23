@@ -6,7 +6,7 @@ import { ButtonComponent } from "src/app/shared/button/button.component";
 @Component({
   selector: "app-project",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BadgeComponent, ButtonComponent],
   templateUrl: "./project.component.html",
   styleUrls: ["./project.component.css"],
 })
