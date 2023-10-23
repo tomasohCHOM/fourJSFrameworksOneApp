@@ -16,6 +16,19 @@ export class NavbarComponent {
     { title: "Projects", path: "#projects" },
     { title: "Contact", path: "#contact" },
   ];
+
+  scrollToLocation(event: Event, path: string) {
+    event.preventDefault();
+    const element = document.querySelector(path);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }
+    this.isOpen = !this.isOpen;
+  }
 }
 
 export interface NavbarItem {

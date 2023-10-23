@@ -3,9 +3,14 @@
     <span>Tomas Oh</span>
   </div>
   <div class="right">
-    <div class="sections">
-      <button class="closeNavbarBtn">Yo</button>
-      <span *ngFor="let item of navbarItems"> {{ item.title }} </span>
+    <div [ngClass]="{ sections: true, active: isOpen }">
+      <button class="closeNavbarBtn" (click)="isOpen = !isOpen">YYOOOOO</button>
+      <span
+        *ngFor="let item of navbarItems"
+        (click)="scrollToLocation($event, item.path); isOpen = !isOpen"
+      >
+        {{ item.title }}
+      </span>
     </div>
     <button class="openNavbarBtn"></button>
   </div>

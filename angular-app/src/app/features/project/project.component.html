@@ -1,1 +1,23 @@
-<p>project works!</p>
+<div class="projectContainer">
+  <h3>{{ project.name }}</h3>
+  <img
+    class="image"
+    src="{project.imageSource}"
+    [alt]="'Image for Project ' + project.name"
+  />
+  <div class="techStackContainer">
+    <app-badge
+      *ngFor="let technology of project.techStack"
+      [text]="technology"
+    />
+  </div>
+  <p>{{ project.description }}</p>
+  <div class="links">
+    <app-button *ngIf="project.demoLink !== ''">
+      <a class="link" [href]="project.demoLink">Demo</a>
+    </app-button>
+    <app-button>
+      <a class="link" [href]="project.githubLink"> Github Repo </a>
+    </app-button>
+  </div>
+</div>
