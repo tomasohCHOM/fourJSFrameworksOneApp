@@ -1,0 +1,12 @@
+.projectsListContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-block-end: 2rem;
+}
+
+@media only screen and (max-width: 60rem) {
+  .projectsListContainer {
+    grid-template-columns: 1fr;
+  }
+}

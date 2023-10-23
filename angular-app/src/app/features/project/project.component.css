@@ -1,0 +1,49 @@
+.projectContainer {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 1.5rem;
+  width: auto;
+}
+
+.projectContainer > h3 {
+  font-weight: 600;
+}
+
+.projectContainer > p {
+  text-align: center;
+  width: 80%;
+}
+
+.link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.image {
+  width: 80%;
+  /* height: 15rem; */
+}
+
+.techStackContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 40rem) {
+  .projectContainer {
+    padding: 1.5rem 2rem;
+  }
+
+  .image {
+    height: auto;
+  }
+}

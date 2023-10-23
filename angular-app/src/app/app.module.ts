@@ -4,10 +4,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./features/navbar/navbar.component";
 import { HeroComponent } from "./features/hero/hero.component";
+import { SkillsComponent } from "./features/skills/skills.component";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NavbarComponent, HeroComponent],
+  imports: [BrowserModule, NavbarComponent, HeroComponent, SkillsComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
