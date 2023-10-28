@@ -1,6 +1,6 @@
 # fourJSFrameworksOneApp
 
-Creating a simple Single-Page Web Application, using FOUR different JavaScript Frameworks. Those being: React, Angular, Vue, and Svelte. Here are my thoughts about each framework:
+Creating a simple Single-Page Web Application, using FOUR different JavaScript Frameworks. Those being: React, Angular, Vue, and Svelte. Here are the positives and negatives that I was able to recollect from each framework:
 
 ## React
 |Positives|Negatives|
